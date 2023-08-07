@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Books</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="banner.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@300&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@300&family=Poppins:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -54,7 +57,71 @@
         <h2 class="banner-titulo">Já sabe por onde começar?</h2>
         <h3 class="banner-texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</h3>
         <input type="search" class="banner-pesquisa" placeholder="Qual será sua próxima leitura?">
-        </section>
+    </section>
+
+    <section class="carrosel">
+        <h2 class="carrosel-titulo">ÚLTIMOS LANÇAMENTOS</h2>
+    </section>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"> <img src="img/Javascript.svg" alt=""></div>
+            <div class="swiper-slide"><img src="img/Arquitetura.svg" alt=""></div>
+            <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt=""></div>
+            <div class="swiper-slide"><img src="img/ReactNative.svg" alt=""></div>
+            <div class="swiper-slide"><img src="img/Nodejs.svg" alt=""></div>
+            ...
+        </div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="card">
+            <!-- 1 linha -->
+            <div class="card-descricao">
+                <!-- 1 coluna -->
+                <div class="descricao">
+                    <h3 class="descricao-titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao-titulo2">Angular 11 e Firebase</h2>
+                        <p class="descricao-paragrafo">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <!-- 2 coluna -->
+                <img src="img/Angular.svg" class="descricao-imagem">
+
+            </div>
+            <!-- 2 linha -->
+            <div class="card-botoes">
+                <ul class="botoes">
+                    <li class="botoes-item"> <img src="img/Favoritos.svg" alt=""></li>
+                    <li class="botoes-item"><img src="img/Compras.svg" alt=""></li>
+                </ul>
+
+                <a href="#" class="botoes-ancora">Saiba Mais</a>
+            </div>
+        </div>
+
+       
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 
 </body>
 
