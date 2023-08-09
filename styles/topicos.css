@@ -30,7 +30,8 @@
 .topicos-link{
     color: var(--branco);
     background-color: var(--laranja);
-    padding: 1em;
+    padding: 0.5em;
+    border-radius: 5px;
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;

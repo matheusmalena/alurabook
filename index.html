@@ -20,7 +20,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Krona+One&family=Montserrat:wght@300&family=Poppins:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -81,9 +81,15 @@
         </ul>
 
         <div class="conteiner">
-            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="conteiner-img conteiner-img-favoritos"></a>
-            <a href="#"><img src="img/Compras.svg" alt="Carrinho de compra" class="conteiner-img"></a>
-            <a href="#"><img src="img/Usuário.svg" alt="Meu perfil" class="conteiner-img"></a>
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="conteiner-img conteiner-img-favoritos">
+            </a>
+            <a href="#" class="conteiner-link"><img src="img/Compras.svg" alt="Carrinho de compra"
+                    class="conteiner-img">
+                <p class="conteiner-texto">Minha sacola</p>
+            </a>
+            <a href="#" class="conteiner-link"><img src="img/Usuário.svg" alt="Meu perfil" class="conteiner-img">
+                <p class="conteiner-texto">Minha sacola</p>
+            </a>
         </div>
 
     </header>
@@ -96,101 +102,107 @@
 
     <section class="carrosel">
         <h2 class="carrosel-titulo">ÚLTIMOS LANÇAMENTOS</h2>
-    </section>
 
-    <section>
 
-    <!-- Slider main container -->
-    <div class="swiper">
+        <!-- Slider main container -->
+        <div class="carrosel-conteiner">
+            <div class="swiper">
 
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"> <img src="img/Javascript.svg" alt=""></div>
-            <div class="swiper-slide"><img src="img/Arquitetura.svg" alt=""></div>
-            <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt=""></div>
-            <div class="swiper-slide"><img src="img/ReactNative.svg" alt=""></div>
-            <div class="swiper-slide"><img src="img/Nodejs.svg" alt=""></div>
-            ...
-        </div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </section>
-
-    
-        <div class="card">
-            <!-- 1 linha -->
-            <div class="card-descricao">
-                <!-- 1 coluna -->
-                <div class="descricao">
-                    <h3 class="descricao-titulo">Talvez você também se interesse por...</h3>
-                    <h2 class="descricao-titulo2">Angular 11 e Firebase</h2>
-                    <p class="descricao-paragrafo">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"> <img src="img/Javascript.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/Arquitetura.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/ReactNative.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/Nodejs.svg" alt=""></div>
                 </div>
-                <!-- 2 coluna -->
-                <img src="img/Angular.svg" class="descricao-imagem">
 
-            </div>
-            <!-- 2 linha -->
-            <div class="card-botoes">
-                <ul class="botoes">
-                    <li class="botoes-item"> <img src="img/Favoritos.svg" alt=""></li>
-                    <li class="botoes-item"><img src="img/Compras.svg" alt=""></li>
-                </ul>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                </div>
 
-                <a href="#" class="botoes-ancora">Saiba Mais</a>
+
+
+
+                <div class="card">
+                    <!-- 1 linha -->
+                    <div class="card-descricao">
+                        <!-- 1 coluna -->
+                        <div class="descricao">
+                            <h3 class="descricao-titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="descricao-titulo2">Angular 11 e Firebase</h2>
+                            <p class="descricao-paragrafo">Construindo uma aplicação integrada com a plataforma do
+                                Google.</p>
+                        </div>
+                        <!-- 2 coluna -->
+                        <img src="img/Angular.svg" class="descricao-imagem">
+
+                    </div>
+                    <!-- 2 linha -->
+                    <div class="card-botoes">
+                        <ul class="botoes">
+                            <li class="botoes-item"> <img src="img/Favoritos.svg" alt=""></li>
+                            <li class="botoes-item"><img src="img/Compras.svg" alt=""></li>
+                        </ul>
+
+                        <a href="#" class="botoes-ancora">Saiba Mais</a>
+                    </div>
+                
             </div>
         </div>
-    
+   
+    </section>
 
-        <section class="topicos">
-            <h2 class="topicos-titulo">Tópicos visitados recentemente</h2>
 
-            <ul class="topicos-lista">
-                <li class="topicos-item"><a href="#" class="topicos-link">Android</a></li>
-                <li class="topicos-item"><a href="#" class="topicos-link">Marketing Digital</a></li>
-                <li class="topicos-item"><a href="#" class="topicos-link">Agile</a></li>
-                <li class="topicos-item"><a href="#" class="topicos-link">Startups</a></li>
-                <li class="topicos-item"><a href="#" class="topicos-link">HTML e CSS</a></li>
-                <li class="topicos-item"><a href="#" class="topicos-link">PYTHON</a></li>
-                <li class="topicos-item"><a href="#" class="topicos-link">OO</a></li>
-                <li class="topicos-item"><a href="#" class="topicos-link">Java</a></li>
-            </ul>
-        </section>
 
-        <section class="contato">
-            <div class="contato-descricao">
+    <section class="topicos">
+        <h2 class="topicos-titulo">Tópicos visitados recentemente</h2>
+
+        <ul class="topicos-lista">
+            <li class="topicos-item"><a href="#" class="topicos-link">Android</a></li>
+            <li class="topicos-item"><a href="#" class="topicos-link">Marketing Digital</a></li>
+            <li class="topicos-item"><a href="#" class="topicos-link">Agile</a></li>
+            <li class="topicos-item"><a href="#" class="topicos-link">Startups</a></li>
+            <li class="topicos-item"><a href="#" class="topicos-link">HTML e CSS</a></li>
+            <li class="topicos-item"><a href="#" class="topicos-link">PYTHON</a></li>
+            <li class="topicos-item"><a href="#" class="topicos-link">OO</a></li>
+            <li class="topicos-item"><a href="#" class="topicos-link">Java</a></li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato-descricao">
             <h2 class="contato-titulo">Fique por dentro das novidades!</h2>
             <p class="contato-frase">Atualizações de e-books, novos livros, promoções e outros.</p>
         </div>
-            <input type="search" class="contato-pesquisa" placeholder="Cadastre seu e-mail">
-        </section>
+        <input type="search" class="contato-pesquisa" placeholder="Cadastre seu e-mail">
+    </section>
 
-        <hr/>
+    <hr />
 
-        <footer class="rodape">
-            <h2 class="rodape-titulo">Grupo Alura</h2>
+    <footer class="rodape">
+        <h2 class="rodape-titulo">Grupo Alura</h2>
 
-        </footer>
+    </footer>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-        <script>
-            const swiper = new Swiper('.swiper', {
-                spaceBetween: 10,
-                slidesPerView: 3,
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                },
-            });
-        </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 
 </body>
 
