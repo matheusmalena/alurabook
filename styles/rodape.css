@@ -1,11 +1,13 @@
 
 hr{
     margin: 0;
+    width: 100%;
 }
 
 .rodape{
     background-color: var(--branco);
     padding: 1em;
+    width: 100%;
 }
 
 .rodape-titulo{
