@@ -47,3 +47,29 @@
         font-size: 24px;
     }
 }
+
+@media screen and (min-width: 1728px) {
+
+    .topicos{
+        padding: 2em 0 3em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topicos-lista{
+        width: 30%;
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    .topicos-link{
+        font-size: 24px;
+        padding: 0.7em;
+        align-items: center;
+    }
+
+    .topicos-titulo{
+        font-size: 32px;
+    }
+}

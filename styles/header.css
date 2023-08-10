@@ -8,6 +8,14 @@
     background-position: center;
 }
 
+.conteiner-botao:checked ~ .conteiner-rotulo > .cabecalho-menu-hamburguer{
+    background-image: url("../img/Menu\ Aberto.svg");
+}
+
+.conteiner-botao:checked ~ .conteiner-rotulo{
+    background: var(--azul-degrade);
+}
+
 .cabecalho{
     background-color: var(--branco);
     display: flex;
@@ -122,6 +130,11 @@
 
     .opcoes-botao{
         display: none;
+    }
+
+    .opcoes-botao:checked ~ .opcoes-rotulo > .opcoes-item {
+        background-color: var(--azul-degrade);
+        color: var(--branco);
     }
 
 }
