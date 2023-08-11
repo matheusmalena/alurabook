@@ -132,10 +132,25 @@
         display: none;
     }
 
-    .opcoes-botao:checked ~ .opcoes-rotulo > .opcoes-item {
-        background-color: var(--azul-degrade);
+
+    .opcoes-botao:checked~.opcoes-rotulo>.opcoes-item {
+        background: var(--azul-degrade);
         color: var(--branco);
     }
+
+    .opcoes-item{
+        padding: 2.2em 1em;
+    }
+
+    .lista-menu-item:hover{
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu-item:hover>.lista-menu-link{
+        -webkit-text-fill-color: var(--branco);
+    }
+
+
 
 }
 
